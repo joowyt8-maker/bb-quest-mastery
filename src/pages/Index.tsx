@@ -14,8 +14,8 @@ const HeroSection = () => (
       <img src={heroBg} alt="" className="w-full h-full object-cover" />
     </div>
     <div className="absolute inset-0 gradient-navy opacity-80" />
-    <div className="relative z-10 container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center gap-12">
-      <div className="flex-1 text-center lg:text-left">
+    <div className="relative z-10 container mx-auto px-4 py-20 flex items-center justify-center">
+      <div className="max-w-3xl text-center">
         <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/20 text-secondary text-sm font-semibold mb-6 tracking-wide">
           CONCURSO BANCO DO BRASIL
         </span>
@@ -26,25 +26,6 @@ const HeroSection = () => (
         <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: 'hsl(220 15% 75%)' }}>
           200 questões no nível real da prova, com gabarito comentado e organizado por matéria. O material de treino que faltava na sua preparação.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a
-            href={CHECKOUT_COMPLETA}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg gradient-gold font-bold text-lg text-accent-foreground shadow-gold hover:scale-105 transition-transform animate-pulse-gold"
-          >
-            Quero a Versão Completa — R$ 27,90
-            <ArrowRight className="w-5 h-5" />
-          </a>
-          <a
-            href={CHECKOUT_ESSENTIAL}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-secondary/30 font-semibold text-lg hover:bg-secondary/10 transition-colors"
-            style={{ color: 'hsl(220 15% 75%)' }}
-          >
-            Ver Versão Essencial — R$ 9,90
-          </a>
-        </div>
-      </div>
-      <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 animate-fade-up">
-        <img src={ebookMockup} alt="E-book 200 Questões Banco do Brasil" className="w-full drop-shadow-2xl" />
       </div>
     </div>
   </section>
